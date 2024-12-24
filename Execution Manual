@@ -1,0 +1,66 @@
+Execution Manual 
+Packages Required – 
+The list of packages are required to run the colab notebook : 
+tensorflow: Tensorflow, a Machine learning framework. 
+!pip install tensorflow
+keras: Keras, a Machine learning framework. 
+!pip install keras
+numpy: NumPy, a fundamental package for numerical computing with Python. 
+!pip install numpy
+pandas: Pandas, a powerful data manipulation library. 
+!pip install pandas 
+Sklearn: is a popular open-source machine learning library for Python. Scikit-learn provides simple and efficient tools for data mining and data analysis
+import sklearn 
+matplotlib.pyplot: Matplotlib, a plotting library. 
+!pip install matplotlib 
+tensorflow.keras.preprocessing.image: Keras preprocessing module for images. 
+PIL: Python Imaging Library, used for image processing tasks. 
+pip install pillow 
+sklearn.metrics: Scikit-learn's metrics module. 
+pip install scikit-learn 
+seaborn: Statistical data visualization based on Matplotlib
+!pip install seaborn 
+Note: Run the pip commands in the colab cell itself. 
+
+In Visual studio code run the following commands for packages installation. 
+Streamlit:
+pip install streamlit. 
+And check the version of streamlit: streamlit --version
+
+Software Required – 
+List of softwares required for the execution of frontend code – Visual Studio Code. 
+Visual Studio Code: 
+1. Download Visual Studio Code: 
+-	Go to the [Visual Studio Code website](https://code.visualstudio.com/). 
+-	Click on the "Download" button for your operating system (Windows, macOS, or Linux). 
+2. Install Visual Studio Code: 
+-	Once the download is complete, run the installer file. 
+-	Follow the installation prompts. 
+-	Accept the license agreement and choose the installation location. 
+-	Complete the installation process. 
+3. Open Visual Studio Code: 
+   - After installation, you can open Visual Studio Code from your desktop or from the Start menu (Windows), Launchpad (macOS), or application menu (Linux). 
+
+Execution steps –  
+Steps to execute .ipynb file: 
+1)	Upload the dataset file into drive. Open it using Google Colab. 
+2)	Run each cell which contains the code. If there is error like no such package, install that particular package. To avoid such errors install all the required packages before executing the cells. 
+3)	After running all the cells the model detect that particular image is having tumor or not.
+4)After that save and zip the file. The command to save and download the zip file: shutil.make_archive("vae_model", "zip", "vae_model")
+files.download("vae_model.zip")
+5)Then keep that zip file into the streamlit in order to fit the model.
+Steps to execute frontend code: 
+1)	Open the project folder directly in your Visual Studio Code. A list of python files will be displayed. 
+2)	Make sure that project folder has python files in the same level.
+3)	Now drag and drop or copy paste the zip file which you have downloaded in the google colab. 
+4)	Check if everything is set for project execution. 
+5)	Now open terminal, change the directory where the project is located. 
+6)	Example: C:\Users\RASHMITHALANDA\Downloads\Major project\Project>
+7)	Once, you locate the project in your folder, run the below command streamlit run-server home.py
+8)	There may be changes of getting errors in the terminal if necessary packages are not installed. Install them properly. 
+
+ 
+  
+ 
+ 
+ 
